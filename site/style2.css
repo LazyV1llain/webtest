@@ -54,7 +54,7 @@ html {
 	background-color: rgba(0, 96, 126, 0.8);
 	color: rgba(0,0,0,0);
 	height: 100%;
-	width: 20%;
+	width: 15%;
 	transform: rotate(-45deg);
 	animation-name: Menu;
 	animation-duration: 4s;
