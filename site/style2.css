@@ -91,7 +91,7 @@ html {
 }
 
 @media (min-width: 350px) and (max-width: 700px) {
-	.menu {
-		font-size: 0.5em;
+	.menu ul {
+		font-size: 2vmin;
 	}
 }
