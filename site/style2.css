@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: poppins;
+	color: white;
+}
+html {
+	background: url("space.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+}
+@font-face {
+	font-family: "poppins";
+	src: url("Poppins/Poppins-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "poppins";
+	src: url("Poppins/Poppins-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face {
+	font-family: "poppinsmed";
+	src: url("Poppins/Poppins-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "poppinslight";
+	src: url("Poppins/Poppins-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+.title {
+	color: rgba(0,0,0,0);
+	-webkit-text-stroke: 1px #00C2FF;
+	top: 50px;
+	margin-bottom: 10px;
+}
+.center-text {
+	position: relative;
+	width: 40%;
+	top: 150px;
+	left: 50px;
+}
+.menu {
+	position: absolute;
+	text-align: right;
+	top: -200px;
+	right: -250px;
+	background-color: rgba(0, 96, 126, 0.8);
+	color: rgba(0,0,0,0);
+	height: 100%;
+	width: 220px;
+	transform: rotate(-45deg);
+	animation-name: Menu;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+.center-text p {
+	font-size: 3vmin;
+}
+.center-text h1 {
+	font-size: 5.5vmin;
+}
+.menu ul {
+	list-style-type: none;
+	font-size: 4vmin;
+}
+.menu li {
+	font-family: "poppinslight";
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-right: 5%;
+}
+.menu li:hover {
+	background-color: rgba(0, 96, 126, 0.8);
+	font-family: "poppinsmed";
+	color: #00C2FF;
+}
+
+/* Keyframes for div Menu */
+
+@keyframes Menu {
+	0% {transform: rotate(-45deg); top: -450px; color: rgba(0,0,0,0); background-color: rgba(0, 96, 126, 0.8);}
+	50% {transform: rotate(0deg); top: 0; right: -200px; color: rgba(0,0,0,0); background-color: rgba(0, 96, 126, 0.8);}
+	100% {right: 0px; top: 0; transform: rotate(0deg); color: white; background-color: rgba(0, 54, 71, 0.8);}
+}
